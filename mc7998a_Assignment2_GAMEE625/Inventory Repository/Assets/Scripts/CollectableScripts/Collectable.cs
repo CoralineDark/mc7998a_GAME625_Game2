@@ -16,6 +16,7 @@ public abstract class Collectable : MonoBehaviour
     [TextArea(15,20)]
     public string description;  
     public GameObject prefab;
+    public GameObject sound; 
     public static event Action<Collectable> ItemPickup;
     public static event Action DisplayItems; 
     protected void OnTriggerEnter2D(Collider2D other) {
