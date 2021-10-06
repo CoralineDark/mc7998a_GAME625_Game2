@@ -458,11 +458,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 389774774}
     m_Modifications:
-    - target: {fileID: 2034440415, guid: c7bbff3b86fd3e14b9f104fb1ea6d570, type: 3}
-      propertyPath: description
-      value: 'Huzzah - A giant gold coin! You''re feeling richer by the second. This
-        item is immediately added to your coin Coin purse and not added to your repository. '
-      objectReference: {fileID: 0}
     - target: {fileID: 6129537546598554873, guid: c7bbff3b86fd3e14b9f104fb1ea6d570, type: 3}
       propertyPath: m_Name
       value: Coin (1)
@@ -1053,6 +1048,7 @@ Transform:
   - {fileID: 1382122438}
   - {fileID: 977513382}
   - {fileID: 1572227913}
+  - {fileID: 545864926}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1546,6 +1542,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &545864926 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5411496153070446228, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
+  m_PrefabInstance: {fileID: 1271820435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &582933938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2631,31 +2632,35 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 389774774}
     m_Modifications:
     - target: {fileID: 1495009172, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1490254180}
+    - target: {fileID: 2179664512438279168, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5411496153070446217, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
       propertyPath: m_Name
       value: staminaPotionCollectable (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5411496153070446228, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5411496153070446228, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.69
+      value: 19.838375
       objectReference: {fileID: 0}
     - target: {fileID: 5411496153070446228, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.34
+      value: -6.3440638
       objectReference: {fileID: 0}
     - target: {fileID: 5411496153070446228, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.3692496
+      value: 6.738499
       objectReference: {fileID: 0}
     - target: {fileID: 5411496153070446228, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2708,6 +2713,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1939096687}
+    - target: {fileID: 7421544439319870667, guid: d9ce2c44b942dc74bb6cbde5abd3a6a8, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8966022202469110822, guid: d9ce2c44b942dc74bb6cbde5abd3a6a8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3199,6 +3208,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1490254180}
+    - target: {fileID: 2179664512438279168, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5411496153070446217, guid: c727bd6b25a4f99428412c711716dd1f, type: 3}
       propertyPath: m_Name
       value: staminaPotionCollectable (1)
@@ -3284,7 +3297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d9a9a44d261d8498de3f65bfd9603e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  newClip: {fileID: 0}
 --- !u!4 &1580189993
 Transform:
   m_ObjectHideFlags: 0
@@ -3311,7 +3324,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4489,6 +4502,10 @@ PrefabInstance:
       value: 'Huzzah - A giant gold coin! You''re feeling richer by the second. This
         item is immediately added to your coin Coin purse and not added to your repository. '
       objectReference: {fileID: 0}
+    - target: {fileID: 3616426738889197617, guid: c7bbff3b86fd3e14b9f104fb1ea6d570, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6129537546598554873, guid: c7bbff3b86fd3e14b9f104fb1ea6d570, type: 3}
       propertyPath: m_Name
       value: Coin (2)
@@ -4652,7 +4669,7 @@ Transform:
   m_Children:
   - {fileID: 1819687562}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &375764645614180091
 PrefabInstance:
@@ -4954,6 +4971,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 389774774}
     m_Modifications:
+    - target: {fileID: 3616426738889197617, guid: c7bbff3b86fd3e14b9f104fb1ea6d570, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3616426738889197617, guid: c7bbff3b86fd3e14b9f104fb1ea6d570, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0

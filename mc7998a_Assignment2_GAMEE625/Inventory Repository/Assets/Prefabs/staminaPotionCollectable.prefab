@@ -120,6 +120,7 @@ MonoBehaviour:
     speed for a defined number of seconds. This item is added to your inventory on
     pick up and has to be removed to be used. '
   prefab: {fileID: 5411496153070446217}
+  sound: {fileID: 0}
 --- !u!82 &2179664512438279168
 AudioSource:
   m_ObjectHideFlags: 0
@@ -132,7 +133,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4069afd56a8cb364886a833bd26a3b50, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -157,6 +157,7 @@ MonoBehaviour:
     and absolutely not some cosplay piece full of LEDs I bought off of Etsy... no
     judging here right? RIGHT?
   prefab: {fileID: 4385318490018796289}
+  sound: {fileID: 0}
 --- !u!82 &5294397115966285636
 AudioSource:
   m_ObjectHideFlags: 0
@@ -169,7 +170,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 91cc298d48822f14c9bfc82d04735f8c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

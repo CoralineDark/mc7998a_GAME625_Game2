@@ -136,8 +136,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 0
   stackable: 0
-  description: Huzzah - A giant gold coin! You're feeling richer by the second.
+  description: 'Huzzah - A giant gold coin! You''re feeling richer by the second.
+    This item is immediately added to your coin Coin purse and not added to your
+    repository. '
   prefab: {fileID: 6129537546598554873}
+  sound: {fileID: 0}
   value: 1
 --- !u!82 &3616426738889197617
 AudioSource:
@@ -151,7 +154,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b85aecb71b10d2445b9d7e16218a1d85, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

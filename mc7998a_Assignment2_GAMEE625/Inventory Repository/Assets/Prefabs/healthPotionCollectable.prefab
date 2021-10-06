@@ -119,6 +119,7 @@ MonoBehaviour:
   description: 'A health potion that refills your players health to max. This item
     is added to your inventory on pick up and has to be removed to be used. '
   prefab: {fileID: 6976994969984069722}
+  sound: {fileID: 0}
 --- !u!82 &3277377030186295432
 AudioSource:
   m_ObjectHideFlags: 0
@@ -131,7 +132,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f685b0083c56ca44e919466d53316955, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
