@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System; 
 
 public class HeartCollectable : Collectable
 {
@@ -15,9 +16,10 @@ public class HeartCollectable : Collectable
         healthBar.AddHealth(1);
         Destroy(gameObject);
     }
+    public static event Action<Collectable> HeartPickUp;
     new protected void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player") {
-            gameObject.GetComponent<AudioSource>().Play(); 
+            HeartPickUp?.Invoke(this);  
             Use();
         }
     }

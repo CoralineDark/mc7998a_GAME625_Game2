@@ -8,7 +8,8 @@ public class SoundsManager : MonoBehaviour
 
     public AudioClip newClip; 
     private void OnEnable() { 
-        Collectable.ItemPickup += PlaySound;  
+        Collectable.ItemPickup += PlaySound;
+        HeartCollectable.HeartPickUp += PlaySound;   
     }
 
     private void OnDisable() {
