@@ -17,6 +17,7 @@ public class HeartCollectable : Collectable
     }
     new protected void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player") {
+            gameObject.GetComponent<AudioSource>().Play(); 
             Use();
         }
     }

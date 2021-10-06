@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         healthBar.SetMaxHealth(_maxHealth); 
-        _stamBoostTimer = 0; 
+        _stamBoostTimer = 0;
     }
 
     private void Update() {
@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
             item.transform.rotation = equipmentSlot.transform.rotation;
         }
         equipped = item; 
-        item.gameObject.SetActive(true);
+        equipped.gameObject.SetActive(true);
     }
 
     public void FullHeal() {

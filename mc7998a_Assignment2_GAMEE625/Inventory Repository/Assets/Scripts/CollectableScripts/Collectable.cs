@@ -11,7 +11,6 @@ public abstract class Collectable : MonoBehaviour
         SingleUseItem
     }
     public ItemType itemType; 
-    protected string collectable = "This is a collectable";
     public bool stackable; 
     protected new string name; 
     [TextArea(15,20)]
